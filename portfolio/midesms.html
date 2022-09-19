@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        h1 {
+            text-align: center;
+            margin-top: 5%;
+        }
+        h5 {
+            margin: 12% 12%;
+            text-align: justify;
+            font-size: 1.5rem;
+
+        }
+        slide {
+            display: none;
+        }
+        .slide img {
+            vertical-align: middle;
+            width: 1000px;
+            height: 540px;
+            margin-top: 5%;
+        }
+        .container {
+            max-width: 1000px;
+            position: relative;
+            margin: auto;
+        }
+        
+    </style>
+    
+    <title>MideWeb SMS Project</title>
+    
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="/#home">Home</a></li>
+            <li><a href="/#about">About Me</a></li>
+            <li><a href="/#portfolio">Portfolio</a></li>
+            <li><a href="/#services">Services</a></li>
+            <li><a href="/#contact">Contact Me</a></li>
+        </ul>
+
+    </nav>
+    <h1>Mide Web SMS Wordpress Project</h1>
+    <div class="container">
+        <div class="slide">
+            <img src="/sms/sms1.png" alt="">
+        </div>
+        <div class="slide">
+            <img src="/sms/sms2.png" alt="">
+        </div>
+        <div class="slide">
+            <img src="/sms/sms3.png" alt="">
+        </div>
+        <div class="slide">
+            <img src="/sms/sms4.png" alt="">
+        </div>
+        <div class="slide">
+            <img src="/sms/sms5.png" alt="">
+        </div>
+        <div class="slide">
+            <img src="/sms/sms6.png" alt="">
+        </div>
+        <div class="slide">
+            <img src="/sms/sms7.png" alt="">
+        </div>
+    </div>
+
+    <h5>Mide Web SMS  - This is a Wordpress project executed for this company. Mide Web SMS is a bulk SMS company that sends out personalized bulk SMS messaging service for its customers.
+
+        Customers can create user account, login to their account and send bulk messages. This platform has various features for its users. https://midewebsms.com
+    </h5>
+
+    <footer>
+        <h2>Any Question?<br>mail me at olumide@mide.com</h2><br>
+        <p>Designed & developed by Olumide Elebute | Copyright (c)2022</p>
+    </footer>
+
+    <script>
+
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let i;
+            let slide = document.getElementsByClassName("slide")
+            for (i = 0; i < slide.length; i++) {
+                slide[i].style.display = "none"
+            }
+            slideIndex++;
+            if (slideIndex > slide.length) {slideIndex = 1}
+            slide[slideIndex-1].style.display = "block";
+            setTimeout(showSlides, 2000);
+        }
+    </script>
+</body>
+</html>
